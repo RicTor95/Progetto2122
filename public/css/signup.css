@@ -1,0 +1,222 @@
+body {
+	background: #0e0d0d url("https://www.peninsulashadesails.com.au/wp-content/uploads/2016/08/orange-banner-bg.jpg") no-repeat fixed center;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content:space-between; 
+	height: 60px;
+	color: white;
+	text-align: left;
+	padding: 5px;
+	position: relative;
+	
+	
+	
+}
+footer {
+	text-align: center;
+	background-color: DarkSalmon;
+	position:relative;
+	bottom:0;
+	left:0;
+	width:100%;
+	top:70px;
+	}
+/*Css per le informazioni del form da inserire, come data, sesso*/
+input {
+	padding: 5px;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.input_error{
+	padding: 5px;
+	border: 0.5px solid red;
+	border-radius: 3px;
+	color: #4B0082;
+}
+
+header h1 {	
+	text-shadow: 2px 2px #ce7b0f; 
+	font-size:3rem;
+	
+	position: relative;
+	bottom: 20px;
+}
+
+header a {
+	font-size: 14px;
+    padding-top: 46px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+p {
+  margin: 0.3em;
+  color: #000000;
+}
+
+form {
+	background-color: white;
+	color: rgb(255, 136, 0);
+	border: 6px groove #94751E;
+	border-radius: 15%;
+	padding: 20px;
+	
+	width: 430px;
+
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#errore_campi {
+	text-align: right;
+	color: red;
+	font-weight: bold;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+label i {
+	position: absolute;
+	top: 5px;
+	left: 422px;
+}
+
+.hidden {
+	display: none;
+}
+
+input {
+  margin-left: 0.5em;
+ width: 200px;
+ margin:3px;
+}
+
+#uom, #donna {
+	width: 20px;
+}
+
+.button {
+	width: 100px;
+	font-weight: bold;
+}
+
+#login {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	position: relative;
+	top: 100px;
+	margin: 10px;
+}
+
+#login h1 {
+	color: white;
+}
+/*Tasto torna login*/
+#btn {
+	cursor: pointer;
+	text-align: center;
+    font: bold Arial, Helvetica, sans-serif;
+	color: #fff;
+	border: solid 1px #94751E;
+	background-color: #820000;
+
+/* Per rendere il tasto tondo nei bordi*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+/*L'ombra del tasto*/
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+
+	position: relative;
+
+	font-size:20px;
+	text-decoration: none;
+	padding:8px;
+		
+	position:relative;
+		
+	height:30px;
+	width:70%;
+}
+/*Quando passo con il mouse il bottone cambia colore, diventa un pò scuro*/
+#btn:hover {
+	background: #ac0404;;
+
+
+}
+
+
+#btn:active {
+position: relative;
+top: 1px;
+}
+
+
+label #sesso {
+	display: flex;
+	justify-content: space-between;
+}
+
+#image {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+#image input {
+	text-align: right;
+	
+	border: 1px rgb(8, 63, 243);
+}
+
+@media (max-width: 600px) {
+	
+	main {
+		display: flex;
+  		flex-direction: column;
+  		justify-content: space-around;
+ 	 	padding-top: 30px;
+	}
+
+	header a {
+		display: none;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	#login {
+		align-items: center;
+		text-align: center;
+	}
+
+	form {
+		width: 85vw;		
+		border-radius: 10px;
+	}
+
+	label i {
+		position: relative;
+		left: 5px;
+	}
+}
